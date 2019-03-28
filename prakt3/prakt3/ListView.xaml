@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="prakt3.ListView"
+             Title="Просмотр заявки" Appearing="ContentPage_Appearing">
+    <StackLayout Margin="10">
+        <Entry Placeholder="" x:Name="topic" IsReadOnly="true"/>
+        <Editor x:Name="description" IsReadOnly="true" VerticalOptions="FillAndExpand" HorizontalOptions="Fill" HeightRequest="-1"/>
+        <Button Text="Редактировать заявку" x:Name="EditButton" Clicked="EditButton_Clicked" />
+    </StackLayout>
+</ContentPage>
