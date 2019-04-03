@@ -27,7 +27,7 @@ namespace prakt3
         }
         private void EditButton_Clicked(object sender, EventArgs e)
         {
-
+           
         }
     }
 }
