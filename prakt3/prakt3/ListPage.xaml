@@ -12,7 +12,7 @@
                       ItemTapped="TicketsListView_ItemTapped">
                 <ListView.ItemTemplate>
                     <DataTemplate>
-                        <my:DescViewCell Descripton="{Binding Descripton}"></my:DescViewCell>
+                        <my:DescViewCell Descripton="{Binding Descripton}" MaxLenght="50"></my:DescViewCell>
                     </DataTemplate>
                 </ListView.ItemTemplate>
             </ListView>
