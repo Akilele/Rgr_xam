@@ -37,8 +37,11 @@ namespace prakt3
         private async void Apply_Clicked(object sender, EventArgs e)
         {
             var ticket = _ticket ?? new Ticket(); //Если _ticket != null, то он присваивается, иначе создается new Ticket();
+            ticket.TopicId = ((Topic)topic.SelectedItem).Id;
             ticket.Topic = (Topic)topic.SelectedItem;
             ticket.Descripton = description.Text;
+            ticket.Employee = App.User;
+            ticket.EmployeeId = App.User.Id;
             if (_ticket == null) App.DB.Tickets.Add(ticket); 
             App.DB.SaveChanges();
             await App.Page.PopToRootAsync();
