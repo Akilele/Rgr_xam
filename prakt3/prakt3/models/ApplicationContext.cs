@@ -20,7 +20,6 @@ namespace prakt3.models
         protected override void OnConfiguring(DbContextOptionsBuilder dbContextOptions)
         {
             dbContextOptions.UseSqlite($"Filename={_db_path}");
-            dbContextOptions.EnableSensitiveDataLogging();
         }
     }
 }

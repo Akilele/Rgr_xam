@@ -31,9 +31,9 @@ namespace prakt3
             TicketsListView.SelectedItem = null;
         }
 
-        private void AddButton_Clicked(object sender, EventArgs e)
+        private async void AddButton_Clicked(object sender, EventArgs e)
         {
-
+            await App.Page.PushAsync(new Editor());
         }
     }
   

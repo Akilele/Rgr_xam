@@ -25,9 +25,9 @@ namespace prakt3
             topic.Text = _topic.Value;
             description.Text = _ticket.Descripton;
         }
-        private void EditButton_Clicked(object sender, EventArgs e)
+        private async void EditButton_Clicked(object sender, EventArgs e)
         {
-           
+            await App.Page.PushAsync(new Editor(_ticket));
         }
     }
 }

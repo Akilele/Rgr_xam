@@ -1,14 +1,15 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="prakt3.Page1">
+             x:Class="prakt3.Editor"
+             Appearing="ContentPage_Appearing">
     <ContentPage.Content>
         <StackLayout Margin="10">
-            <Label Text="Тема обращения:"></Label>
+            <Label Text="Тема обращения:"/>
             <Picker x:Name="topic" />
             <Label Text="Расскажите по-подробнее что случилось:"></Label>
-            <Editor x:Name="description" IsReadOnly="true" VerticalOptions="FillAndExpand" HorizontalOptions="Fill" HeightRequest="-1"/>
-           <Button Text="Применить" x:Name="Apply" /> 
+            <Editor x:Name="description" VerticalOptions="FillAndExpand" HorizontalOptions="Fill" HeightRequest="-1"/>
+           <Button Text="Применить" x:Name="Apply" Clicked="Apply_Clicked"/> 
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
